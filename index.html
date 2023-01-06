@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshops in Web Development</title>
+    <style>
+blockquote,header{background:var(--nc-bg-2)}dt,summary,table caption{font-weight:700}img,pre,textarea{max-width:100%}:root{--nc-font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--nc-font-mono:Consolas,monaco,'Ubuntu Mono','Liberation Mono','Courier New',Courier,monospace;--nc-tx-1:#000000;--nc-tx-2:#1A1A1A;--nc-bg-1:#FFFFFF;--nc-bg-2:#F6F8FA;--nc-bg-3:#E5E7EB;--nc-lk-1:#0070F3;--nc-lk-2:#0366D6;--nc-lk-tx:#FFFFFF;--nc-ac-1:#79FFE1;--nc-ac-tx:#0C4047}@media (prefers-color-scheme:dark){:root{--nc-tx-1:#ffffff;--nc-tx-2:#eeeeee;--nc-bg-1:#000000;--nc-bg-2:#111111;--nc-bg-3:#222222;--nc-lk-1:#3291FF;--nc-lk-2:#0070F3;--nc-lk-tx:#FFFFFF;--nc-ac-1:#7928CA;--nc-ac-tx:#FFFFFF}}*{margin:0;padding:0}address,area,article,aside,audio,blockquote,datalist,details,dl,fieldset,figure,form,iframe,img,input,meter,nav,ol,optgroup,option,output,p,pre,progress,ruby,section,table,textarea,ul,video{margin-bottom:1rem}button,html,input,select{font-family:var(--nc-font-sans)}body{margin:0 auto;max-width:750px;padding:2rem;border-radius:6px;overflow-x:hidden;word-break:break-word;overflow-wrap:break-word;background:var(--nc-bg-1);color:var(--nc-tx-2);font-size:1.03rem;line-height:1.5}::selection{background:var(--nc-ac-1);color:var(--nc-ac-tx)}h1,h2,h3,h4,h5,h6{line-height:1;color:var(--nc-tx-1);padding-top:.875rem}h1,h2,h3{color:var(--nc-tx-1);padding-bottom:2px;margin-bottom:8px;border-bottom:1px solid var(--nc-bg-2)}h4,h5,h6{margin-bottom:.3rem}h1{font-size:2.25rem}h2{font-size:1.85rem}h3{font-size:1.55rem}h4{font-size:1.25rem}h5{font-size:1rem}h6{font-size:.875rem}a{color:var(--nc-lk-1)}a:hover{color:var(--nc-lk-2)}abbr,abbr:hover{cursor:help}blockquote{padding:1.5rem;border-left:5px solid var(--nc-bg-3)}blockquote :last-child{padding-bottom:0;margin-bottom:0}header{border-bottom:1px solid var(--nc-bg-3);padding:2rem 1.5rem;margin:-2rem calc(0px - (50vw - 50%)) 2rem;padding-left:calc(50vw - 50%);padding-right:calc(50vw - 50%)}header h1,header h2,header h3{padding-bottom:0;border-bottom:0}header>:first-child{margin-top:0;padding-top:0}details[open]>:last-child,header>:last-child,ol ol,ol ul,ul ol,ul ul{margin-bottom:0}a button,button,input[type=button],input[type=reset],input[type=submit]{font-size:1rem;display:inline-block;padding:6px 12px;text-align:center;text-decoration:none;white-space:nowrap;background:var(--nc-lk-1);color:var(--nc-lk-tx);border:0;border-radius:4px;box-sizing:border-box;cursor:pointer;color:var(--nc-lk-tx)}a button[disabled],button[disabled],input[type=button][disabled],input[type=reset][disabled],input[type=submit][disabled]{opacity:.5;cursor:not-allowed}.button:focus,.button:hover,button:focus,button:hover,input[type=button]:focus,input[type=button]:hover,input[type=reset]:focus,input[type=reset]:hover,input[type=submit]:focus,input[type=submit]:hover{background:var(--nc-lk-2)}code,details,input,kbd,pre,samp,select,textarea,th,tr:nth-child(2n){background:var(--nc-bg-2)}code,kbd,pre,samp{font-family:var(--nc-font-mono);border:1px solid var(--nc-bg-3);border-radius:4px;padding:3px 6px;font-size:.9rem}code pre,pre code{background:inherit;font-size:inherit;color:inherit;border:0;padding:0;margin:0}details,fieldset{border:1px solid var(--nc-bg-3)}kbd{border-bottom:3px solid var(--nc-bg-3)}pre{padding:1rem 1.4rem;overflow:auto}code pre{display:inline}details{padding:.6rem 1rem;border-radius:4px}summary{cursor:pointer}details[open]{padding-bottom:.75rem}details[open] summary{margin-bottom:6px}dd::before{content:'→ '}hr{border:0;border-bottom:1px solid var(--nc-bg-3);margin:1rem auto}fieldset{margin-top:1rem;padding:2rem;border-radius:4px}input,select,td,textarea,th{border:1px solid var(--nc-bg-3)}legend{padding:auto .5rem}table{border-collapse:collapse;width:100%}td,th{text-align:left;padding:.5rem}table caption{margin-bottom:.5rem}ol,ul{padding-left:2rem}li{margin-top:.4rem}mark{padding:3px 6px;background:var(--nc-ac-1);color:var(--nc-ac-tx)}input,select,textarea{padding:6px 12px;margin-bottom:.5rem;color:var(--nc-tx-2);border-radius:4px;box-shadow:none;box-sizing:border-box}@font-face{font-family:Inter;src:url('src/inter/Inter-ExtraBold.woff2') format('woff2'),url('src/inter/Inter-ExtraBold.woff') format('woff');font-weight:800;font-style:normal;font-display:swap}@font-face{font-family:Inter;src:url('src/inter/Inter-BlackItalic.woff2') format('woff2'),url('src/inter/Inter-BlackItalic.woff') format('woff');font-weight:900;font-style:italic;font-display:swap}@font-face{font-family:Inter;src:url('src/inter/Inter-Regular.woff2') format('woff2'),url('src/inter/Inter-Regular.woff') format('woff');font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:Inter;src:url('src/inter/Inter-LightItalic.woff2') format('woff2'),url('src/inter/Inter-LightItalic.woff') format('woff');font-weight:300;font-style:italic;font-display:swap}@font-face{font-family:Inter;src:url('src/inter/Inter-SemiBoldItalic.woff2') format('woff2'),url('src/inter/Inter-SemiBoldItalic.woff') format('woff');font-weight:600;font-style:italic;font-display:swap}@font-face{font-family:Inter;src:url('src/inter/Inter-BoldItalic.woff2') format('woff2'),url('src/inter/Inter-BoldItalic.woff') format('woff');font-weight:700;font-style:italic;font-display:swap}@font-face{font-family:Inter;src:url('src/inter/Inter-SemiBold.woff2') format('woff2'),url('src/inter/Inter-SemiBold.woff') format('woff');font-weight:600;font-style:normal;font-display:swap}@font-face{font-family:Inter;src:url('src/inter/Inter-Black.woff2') format('woff2'),url('src/inter/Inter-Black.woff') format('woff');font-weight:900;font-style:normal;font-display:swap}@font-face{font-family:Inter;src:url('src/inter/Inter-ExtraLightItalic.woff2') format('woff2'),url('src/inter/Inter-ExtraLightItalic.woff') format('woff');font-weight:200;font-style:italic;font-display:swap}@font-face{font-family:Inter;src:url('src/inter/Inter-Light.woff2') format('woff2'),url('src/inter/Inter-Light.woff') format('woff');font-weight:300;font-style:normal;font-display:swap}@font-face{font-family:Inter;src:url('src/inter/Inter-Bold.woff2') format('woff2'),url('src/inter/Inter-Bold.woff') format('woff');font-weight:700;font-style:normal;font-display:swap}@font-face{font-family:Inter;src:url('src/inter/Inter-ExtraLight.woff2') format('woff2'),url('src/inter/Inter-ExtraLight.woff') format('woff');font-weight:200;font-style:normal;font-display:swap}@font-face{font-family:Inter;src:url('src/inter/Inter-Medium.woff2') format('woff2'),url('src/inter/Inter-Medium.woff') format('woff');font-weight:500;font-style:normal;font-display:swap}@font-face{font-family:Inter;src:url('src/inter/Inter-ExtraBoldItalic.woff2') format('woff2'),url('src/inter/Inter-ExtraBoldItalic.woff') format('woff');font-weight:800;font-style:italic;font-display:swap}@font-face{font-family:Inter;src:url('src/inter/Inter-Thin.woff2') format('woff2'),url('src/inter/Inter-Thin.woff') format('woff');font-weight:100;font-style:normal;font-display:swap}@font-face{font-family:Inter;src:url('src/inter/Inter-ThinItalic.woff2') format('woff2'),url('src/inter/Inter-ThinItalic.woff') format('woff');font-weight:100;font-style:italic;font-display:swap}@font-face{font-family:Inter;src:url('src/inter/Inter-Italic.woff2') format('woff2'),url('src/inter/Inter-Italic.woff') format('woff');font-weight:400;font-style:italic;font-display:swap}
+	</style>
+	<style>
+	    th,
+	    td {
+	        vertical-align: text-top;
+	    }
+
+	    th:nth-of-type(1),
+	    td:nth-of-type(1) {
+	        text-align: center;
+	    }
+    </style>
+</head>
+
+<body>
+	<header>
+	    <h1>HTTP 5214 // Workshop</h1>
+	    <hr>
+	    <h2>Table of contents</h2>
+	    <nav>
+	    	<ul>
+	    		<li><a href="#missionStatement">Mission Statement</a></li>
+	    		<li>
+	    			<a href="#description">Description</a>
+	    		</li>
+	    		<li><a href="#weeklyBreakdown">Weekly Breakdown</a></li>
+	    		<li><a href="#passingCriteria">Passing Criteria</a></li>
+	    		<li><a href="#notes">Notes</a></li>
+	    	</ul>
+	    </nav>
+	</header>
+	<main>
+	    <section id="missionStatement">
+		    <h2>Mission statement</h2>
+		    <p>The point of the course will be to build stuff that makes everyone's dev work easier. This means both <strong>creating value for other developers</strong> and <strong>flattening the learning curve</strong> of your tool as much as reasonably possible.</p>
+		    <p>The "stuff" you build is up to you. It just has to be&hellip;</p>
+		    <ul>
+		    	<li>&hellip;coded, and</li>
+		    	<li>&hellip;potentially useful to your classmates.</li>
+		    </ul>
+	    </section>
+	    <section id="description">
+		    <h2>Description</h2>
+		    <p>This course will be conducted using <a href="#agile">Agile principles</a>. This means a flexible workflow that responds to the needs of the team. As a starting point, we will be&hellip;</p>
+		    <ul>
+		        <li>using a virtual <a href="#kanban">Kanban board</a> (via <a href="https://trello.com/b/39FoPmFO/kanban-board" target="_blank">Trello</a>) to assign and track feature progress,</li>
+		        <li>conducting <a href="#scrum">Scrum</a> ceremonies, including sprint planning, stand-ups, reviews and retrospectives.</li>
+		    </ul>
+		    <p>Per Agile, any and all tools (including ceremonies) are subject to reassessment based on the needs of the team.</p>
+		    <p>I will serve as the product owner. The product will be a suite of internal tools developed to resolve pain points identified by the team. These tools will be stored and maintained in a <a href="https://github.com/HTTP5214-Winter2023" target="_blank">git repository</a>.</p>
+		    <p>Each tool must be user-tested by five other students (who have not contributed to the tool). User-testing results must be documented, including any instructions that had to be supplied to the user, and any user feedback. These results will be used to improve the tool. While smaller tools (i.e. simple bash scripts) might be ready for testing within the first couple of weeks, no tool should be so large in scope that it cannot be user tested by week 10.</p>
+		    <p>Weeks 2 & 3 I will serve as the scrum master, conducting a single stand-up meeting (time-boxed to 30min) to provide clarity on lines of research that encourages collaboration and minimizes redundancy across the team. Weeks 4+, students will be divided into groups of 5-10 where they are collaborating or working in a similar code/user space. Individual teams can select a team member to serve as scrum master in a given week.</p>
+	    </section>
+	    <section id="agile">
+	    	<h2>Agile project management</h2>
+	    	<p>Okay, you may have heard the term "agile" thrown around in relation to dev work. Agile can mean a lot of different things, but basically it means "a set of project management principles that can respond to what the team needs". Basically it's a way of working that reflects the software lifecycle that the web introduced - where you can update pieces of the whole, and if something's broken, you can just fix it, rather than, say, recalling ten thousand cars that people are already driving.</p>
+	    	<p>You can <a href="https://en.wikipedia.org/wiki/Agile_software_development" target="_blank">read all about Agile</a> if you want, but we're going to be taking some techniques from two specific Agile methodologies: <a href="#kanban">Kanban</a> and <a href="#scrum">Scrum</a>.</p>
+	    </section>
+	    <section id="kanban">
+	    	<h3>Kanban</h3>
+	    	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="406" height="306" class="illustration styles_illustrationTablet__1DWOa">
+	    		<title>Kanban board</title>
+	    		<g id="_174_scrum_board_outline" data-name="#174_scrum_board_outline"><rect x="86.48" y="76.55" width="227.04" height="146.91" rx="5.64" fill="#68e1fd"></rect><path d="M307.88,224.45H92.12a6.65,6.65,0,0,1-6.64-6.64V82.19a6.65,6.65,0,0,1,6.64-6.64H307.88a6.65,6.65,0,0,1,6.64,6.64V217.81A6.65,6.65,0,0,1,307.88,224.45ZM92.12,77.55a4.64,4.64,0,0,0-4.64,4.64V217.81a4.64,4.64,0,0,0,4.64,4.64H307.88a4.64,4.64,0,0,0,4.64-4.64V82.19a4.64,4.64,0,0,0-4.64-4.64Z" fill="#093f68"></path><path d="M86.48,104.13h227a0,0,0,0,1,0,0V217.81a5.64,5.64,0,0,1-5.64,5.64H92.12a5.64,5.64,0,0,1-5.64-5.64V104.13A0,0,0,0,1,86.48,104.13Z" fill="#fff"></path><path d="M307.88,224.45H92.12a6.65,6.65,0,0,1-6.64-6.64V104.13a1,1,0,0,1,1-1h227a1,1,0,0,1,1,1V217.81A6.65,6.65,0,0,1,307.88,224.45ZM87.48,105.13V217.81a4.64,4.64,0,0,0,4.64,4.64H307.88a4.64,4.64,0,0,0,4.64-4.64V105.13Z" fill="#093f68"></path><path d="M139.79,224.45a1,1,0,0,1-1-1V76.55a1,1,0,1,1,2,0v146.9A1,1,0,0,1,139.79,224.45Z" fill="#093f68"></path><path d="M200,224.45a1,1,0,0,1-1-1V76.55a1,1,0,0,1,2,0v146.9A1,1,0,0,1,200,224.45Z" fill="#093f68"></path><path d="M260.21,224.45a1,1,0,0,1-1-1V76.55a1,1,0,0,1,2,0v146.9A1,1,0,0,1,260.21,224.45Z" fill="#093f68"></path><rect x="97.83" y="116.53" width="29.25" height="27.11" fill="#ffbc0e"></rect><path d="M127.08,144.65H97.83a1,1,0,0,1-1-1V116.53a1,1,0,0,1,1-1h29.25a1,1,0,0,1,1,1v27.12A1,1,0,0,1,127.08,144.65Zm-28.25-2h27.25V117.53H98.83Z" fill="#093f68"></path><rect x="156.07" y="116.53" width="29.25" height="27.11" fill="#ffbc0e"></rect><path d="M185.32,144.65H156.07a1,1,0,0,1-1-1V116.53a1,1,0,0,1,1-1h29.25a1,1,0,0,1,1,1v27.12A1,1,0,0,1,185.32,144.65Zm-28.25-2h27.25V117.53H157.07Z" fill="#093f68"></path><rect x="156.07" y="150.24" width="29.25" height="27.11" fill="#f56132"></rect><path d="M185.32,178.35H156.07a1,1,0,0,1-1-1V150.24a1,1,0,0,1,1-1h29.25a1,1,0,0,1,1,1v27.11A1,1,0,0,1,185.32,178.35Zm-28.25-2h27.25V151.24H157.07Z" fill="#093f68"></path><rect x="215.52" y="116.53" width="29.25" height="27.11" fill="#ffbc0e"></rect><path d="M244.78,144.65H215.52a1,1,0,0,1-1-1V116.53a1,1,0,0,1,1-1h29.26a1,1,0,0,1,1,1v27.12A1,1,0,0,1,244.78,144.65Zm-28.26-2h27.26V117.53H216.52Z" fill="#093f68"></path><rect x="215.52" y="150.24" width="29.25" height="27.11" fill="#f56132"></rect><path d="M244.78,178.35H215.52a1,1,0,0,1-1-1V150.24a1,1,0,0,1,1-1h29.26a1,1,0,0,1,1,1v27.11A1,1,0,0,1,244.78,178.35Zm-28.26-2h27.26V151.24H216.52Z" fill="#093f68"></path><rect x="272.01" y="116.53" width="29.25" height="27.11" fill="#70cc40"></rect><path d="M301.26,144.65H272a1,1,0,0,1-1-1V116.53a1,1,0,0,1,1-1h29.25a1,1,0,0,1,1,1v27.12A1,1,0,0,1,301.26,144.65Zm-28.25-2h27.25V117.53H273Z" fill="#093f68"></path><rect x="215.52" y="183.94" width="29.25" height="27.11" fill="#70cc40"></rect><path d="M244.78,212.05H215.52a1,1,0,0,1-1-1V183.94a1,1,0,0,1,1-1h29.26a1,1,0,0,1,1,1v27.11A1,1,0,0,1,244.78,212.05Zm-28.26-2h27.26V184.94H216.52Z" fill="#093f68"></path><path d="M122,124.31H103.06a1,1,0,0,1,0-2H122a1,1,0,0,1,0,2Z" fill="#093f68"></path><path d="M122,130.29H103.06a1,1,0,0,1,0-2H122a1,1,0,0,1,0,2Z" fill="#093f68"></path><path d="M117.78,136.26H103.06a1,1,0,0,1,0-2h14.72a1,1,0,0,1,0,2Z" fill="#093f68"></path><path d="M180.15,158.82H161.24a1,1,0,0,1,0-2h18.91a1,1,0,1,1,0,2Z" fill="#093f68"></path><path d="M180.15,164.79H161.24a1,1,0,0,1,0-2h18.91a1,1,0,0,1,0,2Z" fill="#093f68"></path><path d="M176,170.77H161.24a1,1,0,0,1,0-2H176a1,1,0,0,1,0,2Z" fill="#093f68"></path><path d="M239.6,125.11H220.7a1,1,0,0,1,0-2h18.9a1,1,0,0,1,0,2Z" fill="#093f68"></path><path d="M239.6,131.09H220.7a1,1,0,0,1,0-2h18.9a1,1,0,0,1,0,2Z" fill="#093f68"></path><path d="M235.41,137.07H220.7a1,1,0,0,1,0-2h14.71a1,1,0,1,1,0,2Z" fill="#093f68"></path><path d="M239.6,192.52H220.7a1,1,0,0,1,0-2h18.9a1,1,0,0,1,0,2Z" fill="#093f68"></path><path d="M239.6,198.5H220.7a1,1,0,0,1,0-2h18.9a1,1,0,1,1,0,2Z" fill="#093f68"></path><path d="M235.41,204.47H220.7a1,1,0,0,1,0-2h14.71a1,1,0,0,1,0,2Z" fill="#093f68"></path><path d="M180.15,128.1H161.24a1,1,0,0,1,0-2h18.91a1,1,0,0,1,0,2Z" fill="#093f68"></path><path d="M174.41,134.08H161.24a1,1,0,0,1,0-2h13.17a1,1,0,0,1,0,2Z" fill="#093f68"></path><path d="M296.09,128.1H277.18a1,1,0,0,1,0-2h18.91a1,1,0,0,1,0,2Z" fill="#093f68"></path><path d="M290.34,134.08H277.18a1,1,0,0,1,0-2h13.16a1,1,0,0,1,0,2Z" fill="#093f68"></path><path d="M239.6,161.81H220.7a1,1,0,0,1,0-2h18.9a1,1,0,0,1,0,2Z" fill="#093f68"></path><path d="M233.86,167.78H220.7a1,1,0,0,1,0-2h13.16a1,1,0,0,1,0,2Z" fill="#093f68"></path><path d="M127.08,161.81H99.85a1,1,0,1,1,0-2h27.23a1,1,0,1,1,0,2Z" fill="#dfeaef"></path><path d="M127.08,170.77H99.85a1,1,0,0,1,0-2h27.23a1,1,0,1,1,0,2Z" fill="#dfeaef"></path><path d="M117.78,179.73H99.85a1,1,0,0,1,0-2h17.93a1,1,0,0,1,0,2Z" fill="#dfeaef"></path><path d="M292.14,212.05H275a1,1,0,0,1,0-2h17.12a1,1,0,0,1,0,2Z" fill="#dfeaef"></path><path d="M301.26,202.44H275a1,1,0,0,1,0-2h26.24a1,1,0,0,1,0,2Z" fill="#dfeaef"></path><path d="M183.69,190.31H159.78a1,1,0,0,1,0-2h23.91a1,1,0,0,1,0,2Z" fill="#dfeaef"></path><path d="M121,90.42H102.11a1,1,0,0,1,0-2H121a1,1,0,0,1,0,2Z" fill="#093f68"></path><path d="M176,90.42H162.28a1,1,0,0,1,0-2H176a1,1,0,0,1,0,2Z" fill="#093f68"></path><path d="M245,90.42H215.29a1,1,0,0,1,0-2H245a1,1,0,0,1,0,2Z" fill="#093f68"></path><path d="M302,90.42h-5.86a1,1,0,0,1,0-2H302a1,1,0,0,1,0,2Z" fill="#093f68"></path><path d="M290.34,90.42H275.55a1,1,0,0,1,0-2h14.79a1,1,0,0,1,0,2Z" fill="#093f68"></path></g>
+	    	</svg>
+	    	<p><a href="https://en.wikipedia.org/wiki/Kanban_(development)">Kanban</a> is a project management technique often used in software development. It is recognized as an "Agile" development method. Basically, everything "thing" (feature, user story) that you're working on you put on a sticky note, and move it to a different corresponding column whenever the status of the work changes.</p>
+	    	<p>The purpose of this is to make it really easy to visualize the progress of the team's work.</p>
+	    	<p><a href="https://trello.com/b/39FoPmFO/kanban-board" target="_blank">Our board</a> has a pretty typical column layout:</p>
+	    	<dl style="padding-left: 1rem;">
+	    		<dt>Research</dt>
+	    		<dd>Stuff we're looking into doing.</dd>
+	    		<dt>To do</dt>
+	    		<dd>Stuff we're committed to doing next.</dd>
+	    		<dt>Doing</dt>
+	    		<dd>Stuff we're actively working on.</dd>
+	    		<dt>Code Review</dt>
+	    		<dd>Stuff we've finished that needs peer review before it's considered "done".</dd>
+	    		<dt>Done</dt>
+	    		<dd>Stuff that has completed code review.</dd>
+	    		<dt>Backlog</dt>
+	    		<dd>Stuff we want to work on, but we're not sure when we'll get to it.</dd>
+	    	</dl>
+	    	<p>Since we're using a virtual board, we can associate a lot of information with each task (sticky note), like&hellip;</p>
+	    	<ul>
+	    		<li>who it's assigned to,</li>
+	    		<li>when we estimate it will be done,</li>
+	    		<li>comments,</li>
+	    		<li>activity history,</li>
+	    		<li>labels,</li>
+	    		<li>etc.</li>
+	    	</ul>
+	    	<p>We can also use it remotely, <a href="https://trello.com/b/39FoPmFO/kanban-board/butler/rules" target="_blank">create automations</a> (like notifications), and integrate it with other tools.</p>
+	    	<p>Kanban boards are often updated during stand-up meetings. <em>What's a stand-up meeting</em>, you ask?</p>
+	    	<p>Well, that brings us to&hellip;</p>
+	    </section>
+	    <section id="scrum">
+	    	<h3>Scrum</h3>
+	    	<p>Scrum is another set of Agile software project management practices.</p>
+	    	<p>It has <a href="https://news.ycombinator.com/item?id=28702676" target="_blank">kind of become a dirty word nowadays</a>, because some folks decided to charge money for training and turn it into something kind of cult-like.</p>
+	    	<p><strong>But</strong> the industry still uses a lot of Scrum practices - they're just not dogmatic about them, because the <em>whole point</em> of Agile software is to be flexible. That's what we're gonna do - take some Scrum practices, and change 'em if we don't like 'em.</p>
+	    	<p>Here're the ones we're going to use:</p>
+	    	<h4>Stand-ups</h4>
+	    	<p>A 'stand-up' is a quick meeting where people say three things:</p>
+	    	<ul>
+	    		<li>what they did since the last stand-up,</li>
+	    		<li>what they're gonna do now,</li>
+	    		<li>anything that's preventing them from working (a 'blocker').</li>
+	    	</ul>
+	    	<p>If you're using a Kanban board, like we are, this is often when it gets updated, during the stand-up.</p>
+	    	<p>The point of the stand-up meeting is so that everyone knows what everyone else is working on, and if they can help.</p>
+	    	<p>Stand-ups are usually a 10-15 minute meeting around the beginning of each day. Since we're not going to be together everyday, we'll do them each class - for the first couple weeks as a whole class, and then in smaller groups.</p>
+	    	<h4>Sprint planning</h4>
+	    	<p>A 'sprint' is a period of time where you're working fairly uninterrupted on a set amount of work. Typically this is two weeks (about ten working days), but since we're not working 8 hours a day, five days a week, <a href="#weeklyBreakdown">our sprints</a> will be a little wonky. A 'sprint planning meeting' is just a meeting where you figure out what work you're going to try and get done during that period of time. It's also usually when you create all the sticky notes that go on the Kanban board.</p>
+	    	<h4>Retrospectives</h4>
+	    	<p>A 'retrospective' is a longer discussion about how the project is being managed - what's going well, and what could be improved. Usually this is done once every two weeks (every ten working days, i.e. one sprint) - we're going to have them <a href="#weeklyBreakdown">a little more sporadically</a>.</p>
+	    	<h4>A scrum thing we're not doing: sprint review</h4>
+	    	<p>There's <em>another</em> meeting type in Scrum called a "sprint review". It's like a retrospective, but a retrospective asks, "is our process working?", whereas a sprint review asks, "how is the work progressing?" Since our work is going to be very fragmented, we'll probably skip the sprint reviews.</p>
+	    	<p><strong>OR MAYBE NOT</strong>, because here's the thing:</p>
+	    	<h4>We're working agile, which means we can do whatever we want.</h4>
+	    	<p>Each time we have a retrospective, it's an opportunity for us to <em>change how we work</em>, meaning we can stop having stand-ups, or start having sprint reviews, or change how often we have stand-ups, or <em>whatever we can agree will help the process</em>.</p>
+	    	<p>Now, there are two caveats here:</p>
+	    	<ol>
+	    		<li>You need buy-in from the product owner, meaning you have to get me to approve it, and</li>
+	    		<li>I need a way to give 45+ students each a SAT/UNSAT grade in a fair, predictable and manageable way. Since that's a requirement that I have to fulfill, there will be certain things I'll insist on. But we can <a href="#passingCriteria">talk about that later</a>.</li>
+	    	</ol>
+	    </section>
+	    <section id="weeklyBreakdown">
+	    	<h2>Weekly breakdown</h2>
+		    <table style="table-layout: fixed;">
+		        <thead>
+		            <tr>
+		                <th style="width: 6ch;">Week</th>
+		                <th>Tasks</th>
+		            </tr>
+		        </thead>
+		        <tbody>
+		            <tr>
+		                <td>1</td>
+		                <td>
+		                    <ul>
+		                        <li>Course description</li>
+		                        <li>Agile (Kanban/Scrum) introduction</li>
+		                        <li>Description of a simple git workflow</li>
+		                        <li>Description of code review</li>
+		                        <li>Description of potential projects
+		                            <ul>
+		                                <li>Library of simple shell/bash scripts (⭐)</li>
+		                                <li>Team editor config boilerplate (⭐⭐)</li>
+		                                <li>Docker container for shared dev environment (⭐⭐⭐)</li>
+		                                <li>Boilerplate / workflow for deploying static HTML pages (⭐⭐)</li>
+		                                <li>Automated documentation (⭐⭐⭐)</li>
+		                                <li>Test suite (from simple unit test examples to visual regression via CI action/webhook) (⭐⭐/⭐)</li>
+		                                <li>Synchronizing team tools, i.e. Github pull request notification in Slack; git merge triggers card movement in Trello; etc. (⭐/⭐)</li>
+		                            </ul>
+		                        </li>
+		                        <li>Break into groups to identify development pain-points</li>
+		                        <li>Research time</li>
+		                    </ul>
+		                </td>
+		            </tr>
+		            <tr>
+		                <td>2</td>
+		                <td>
+		                	<ul>
+		                		<li>Jumbo stand-up</li>
+		                		<li>Research time</li>
+		                	</ul>
+		                </td>
+		            </tr>
+		            <tr>
+		                <td>3</td>
+		                <td>
+		                	<ul>
+		                		<li>Jumbo stand-up</li>
+		                		<li>Research time</li>
+		                		<li>Get into teams</li>
+		                		<li>Sprint planning</li>
+		                	</ul>
+		                </td>
+		            </tr>
+		            <tr>
+		                <td>4</td>
+		                <td>
+		                	<ul>
+		                		<li>Retrospective</li>
+		                		<li>Stand-up</li>
+		                	</ul>
+		                </td>
+		            </tr>
+		            <tr>
+		                <td>5</td>
+		                <td><ul><li>Stand-up</li></ul></td>
+		            </tr>
+		            <tr>
+		                <td>6</td>
+		                <td><ul><li>Stand-up</li></ul></td>
+		            </tr>
+		            <tr>
+		                <td>7</td>
+		                <td>
+		                	<ul>
+		                		<li>Stand-up</li>
+		                		<li>Retrospective</li>
+		                	</ul></td>
+		            </tr>
+		            <tr>
+		                <td>X</td>
+		                <td><strong>Reading Week</strong></td>
+		            </tr>
+		            <tr>
+		                <td>8</td>
+		                <td>
+		                	<ul><li>Stand-up</li><li>Sprint planning</li></ul></td>
+		            </tr>
+		            <tr>
+		                <td>9</td>
+		                <td><ul><li>Stand-up</li></ul></td>
+		            </tr>
+		            <tr>
+		                <td>10</td>
+		                <td><ul><li>Stand-up</li><li>Deadline for user testing</li></ul></td>
+		            </tr>
+		            <tr>
+		                <td>11</td>
+		                <td><ul><li>Stand-up</li><li>Retrospective</li><li>Sprint planning</li></ul></td>
+		            </tr>
+		            <tr>
+		                <td>12</td>
+		                <td><ul><li>Stand-up</li></ul></td>
+		            </tr>
+		            <tr>
+		                <td>13</td>
+		                <td><ul><li>Stand-up</li></ul></td>
+		            </tr>
+		            <tr>
+		                <td>14</td>
+		                <td><ul><li>Retrospective</li></ul></td>
+		            </tr>
+		        </tbody>
+		        <tfoot>
+		            <tr>
+		                <td colspan="2"><em>Note: the stars (⭐) indicate level of difficulty. These levels of difficulty are for students' assessment of tasks they might choose, but are in no way reflected in the passing criteria.</em></td>
+		            </tr>
+		        </tfoot>
+		    </table>
+		</section>
+		<section id="passingCriteria">
+		    <h2>Passing criteria</h2>
+		    <p>Each student will maintain a markdown file in the shared git repository. Each week they will document 1) what they worked on in the last session; 2) what they will be working on in their upcoming session; 3) any issues blocking their work. 10 such entries are required for a pass.</p>
+		    <p>Each student must create at minimum one pull request which passes code review. </p>
+		</section>
+	</main>
+	<footer>
+		<hr>
+		<section id="notes">
+		    <h2>Notes</h2>
+		    <ul>
+		        <li>Code review criteria:
+		            <ul>
+		                <li>Do you understand everything in the code, either because it would be obvious to a junior developer, or because it is documented (either in code comments or a README.md file)?</li>
+		                <li>Are there any code conflicts?</li>
+		                <li>Is the code contributing to the project?</li>
+		            </ul>
+		        </li>
+		    </ul>
+		</section>
+	</footer>
+</body>
+
+</html>
