@@ -19,6 +19,9 @@ blockquote,header{background:var(--nc-bg-2)}dt,summary,table caption{font-weight
 	    td:nth-of-type(1) {
 	        text-align: center;
 	    }
+	    .show-for-sr {
+	    	font-size: 0;
+	    }
     </style>
 </head>
 
@@ -35,7 +38,7 @@ blockquote,header{background:var(--nc-bg-2)}dt,summary,table caption{font-weight
 	    		</li>
 	    		<li><a href="#weeklyBreakdown">Weekly Breakdown</a></li>
 	    		<li><a href="#passingCriteria">Passing Criteria</a></li>
-	    		<li><a href="#notes">Notes</a></li>
+	    		<li><a href="#review">Review</a></li>
 	    	</ul>
 	    </nav>
 	</header>
@@ -99,7 +102,7 @@ blockquote,header{background:var(--nc-bg-2)}dt,summary,table caption{font-weight
 	    		<li>etc.</li>
 	    	</ul>
 	    	<p>We can also use it remotely, <a href="https://trello.com/b/39FoPmFO/kanban-board/butler/rules" target="_blank">create automations</a> (like notifications), and integrate it with other tools.</p>
-	    	<p>Kanban boards are often updated during stand-up meetings. <em>What's a stand-up meeting</em>, you ask?</p>
+	    	<p>Kanban boards are often updated during stand&#8209;up meetings. <em>What's a stand-up meeting</em>, you ask?</p>
 	    	<p>Well, that brings us to&hellip;</p>
 	    </section>
 	    <section id="scrum">
@@ -115,14 +118,14 @@ blockquote,header{background:var(--nc-bg-2)}dt,summary,table caption{font-weight
 	    		<li>what they're gonna do now,</li>
 	    		<li>anything that's preventing them from working (a 'blocker').</li>
 	    	</ul>
-	    	<p>If you're using a Kanban board, like we are, this is often when it gets updated, during the stand-up.</p>
+	    	<p>If you're using a Kanban board, like we are, this is often when it gets updated, during the stand&#8209;up.</p>
 	    	<p>The point of the stand-up meeting is so that everyone knows what everyone else is working on, and if they can help.</p>
 	    	<p>Stand-ups are usually a 10-15 minute meeting around the beginning of each day. Since we're not going to be together everyday, we'll do them each class - for the first couple weeks as a whole class, and then in smaller groups.</p>
 	    	<h4>Sprint planning</h4>
 	    	<p>A 'sprint' is a period of time where you're working fairly uninterrupted on a set amount of work. Typically this is two weeks (about ten working days), but since we're not working 8 hours a day, five days a week, <a href="#weeklyBreakdown">our sprints</a> will be a little wonky. A 'sprint planning meeting' is just a meeting where you figure out what work you're going to try and get done during that period of time. It's also usually when you create all the sticky notes that go on the Kanban board.</p>
 	    	<h4>Retrospectives</h4>
 	    	<p>A 'retrospective' is a longer discussion about how the project is being managed - what's going well, and what could be improved. Usually this is done once every two weeks (every ten working days, i.e. one sprint) - we're going to have them <a href="#weeklyBreakdown">a little more sporadically</a>.</p>
-	    	<h4>A scrum thing we're not doing: sprint review</h4>
+	    	<h4>A scrum thing we're <em>not</em> doing: sprint review</h4>
 	    	<p>There's <em>another</em> meeting type in Scrum called a "sprint review". It's like a retrospective, but a retrospective asks, "is our process working?", whereas a sprint review asks, "how is the work progressing?" Since our work is going to be very fragmented, we'll probably skip the sprint reviews.</p>
 	    	<p><strong>OR MAYBE NOT</strong>, because here's the thing:</p>
 	    	<h4>We're working agile, which means we can do whatever we want.</h4>
@@ -149,19 +152,9 @@ blockquote,header{background:var(--nc-bg-2)}dt,summary,table caption{font-weight
 		                    <ul>
 		                        <li>Course description</li>
 		                        <li>Agile (Kanban/Scrum) introduction</li>
+		                        <li>Description of <a href="#potentialProjects">potential projects</a></li>
 		                        <li>Description of a simple git workflow</li>
 		                        <li>Description of code review</li>
-		                        <li>Description of potential projects
-		                            <ul>
-		                                <li>Library of simple shell/bash scripts (⭐)</li>
-		                                <li>Team editor config boilerplate (⭐⭐)</li>
-		                                <li>Docker container for shared dev environment (⭐⭐⭐)</li>
-		                                <li>Boilerplate / workflow for deploying static HTML pages (⭐⭐)</li>
-		                                <li>Automated documentation (⭐⭐⭐)</li>
-		                                <li>Test suite (from simple unit test examples to visual regression via CI action/webhook) (⭐⭐/⭐)</li>
-		                                <li>Synchronizing team tools, i.e. Github pull request notification in Slack; git merge triggers card movement in Trello; etc. (⭐/⭐)</li>
-		                            </ul>
-		                        </li>
 		                        <li>Break into groups to identify development pain-points</li>
 		                        <li>Research time</li>
 		                    </ul>
@@ -210,7 +203,8 @@ blockquote,header{background:var(--nc-bg-2)}dt,summary,table caption{font-weight
 		                	<ul>
 		                		<li>Stand-up</li>
 		                		<li>Retrospective</li>
-		                	</ul></td>
+		                	</ul>
+		                </td>
 		            </tr>
 		            <tr>
 		                <td>X</td>
@@ -255,23 +249,154 @@ blockquote,header{background:var(--nc-bg-2)}dt,summary,table caption{font-weight
 		</section>
 		<section id="passingCriteria">
 		    <h2>Passing criteria</h2>
-		    <p>Each student will maintain a markdown file in the shared git repository. Each week they will document 1) what they worked on in the last session; 2) what they will be working on in their upcoming session; 3) any issues blocking their work. 10 such entries are required for a pass.</p>
-		    <p>Each student must create at minimum one pull request which passes code review. </p>
+		    <p>Each of you will maintain a markdown (<code>.md</code>) file in the shared git repository. Each week you will document 1) what you worked on in the last session; 2) what you will be working on in your upcoming session; 3) any issues blocking your work. 10 such entries are required for a pass.</p>
+		    <p>Each student must create at minimum one pull request which passes code review, and which contributes to a project that is user-tested with five classmates (not working on the same project). The results of this user testing must be written down and stored in the git repo.</p>
+		</section>
+		<section id="potentialProjects">
+			<h2>Potential projects</h2>
+			<ul>
+			    <li>Library of simple <a href="#shell">shell/bash scripts</a> (⭐)</li>
+			    <li>Team <a href="#editorConfig">editor config boilerplate</a> (⭐⭐)</li>
+			    <li>Shared <a href="#sharedDev">dev environment</a> (⭐⭐⭐)</li>
+			    <li>Boilerplate / <a href="#staticHTML">workflow for deploying static HTML</a> pages (⭐⭐)</li>
+			    <li><a href="#automatedDocs">Automated documentation</a> (⭐⭐⭐)</li>
+			    <li><a href="#testSuite">Test suite</a> (from simple unit test examples to visual regression via CI action/webhook) (⭐⭐/⭐)</li>
+			    <li><a href="#integration">Synchronizing team tools</a>, i.e. Github pull request notification in Slack; git merge triggers card movement in Trello; etc. (⭐/⭐)</li>
+			</ul>
+		</section>
+		<section id="shell">
+			<h3>Shell scripting</h3>
+			<p>Shells are computer interfaces that predate modern Graphical User Interfaces.</p>
+			<figure>
+				<img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Apple_Lisa_Computer.jpg" alt="Apple Lisa Computer">
+				<figcaption>Imagine before this. <em>Timothy Colegrove, CC BY-SA 4.0, via Wikimedia Commons</em></figcaption>
+			</figure>
+			<p>Shell scripts are simple computer programs that&hellip; make computers do stuff.</p>
+			<p>I'd love to be more specific, but they're insanely flexible, so that's about as specific as I can be without excluding something.</p>
+			<p>Shell scripts are very commonly used on servers, but can also serve to automate tasks on our own computers. Since the majority of web servers run on Linux, the most popular shell scripting language is bash, which is the default shell on most Linux machines.</p>
+			<p>Working in the shell is great for creating files and folders, and manipulating their content. For example:</p>
+			<pre><code># delete the file called 'test.html'
+rm test.html && 
+# download this html file from github & save the contents into 
+# a local copy called 'test.html'
+curl https://raw.githubusercontent.com/simonborer/Workshops/main/index.html > test.html && 
+# In 'test.html', replace every instance of the word 'Scrum' 
+# with the word 'Scrumptious'
+sed -i '.bak' 's/Scrum/Scrumptious/g' test.html && 
+# For every instance of the word 'Scrumptious' in 'test.html', 
+# print the line in the terminal with the line number
+grep 'Scrumptious' test.html -n</code></pre>
+			<p>You can type or paste these commands directly into your terminal, or you can save them in a file, called a shell script. For example, I have script called `pwGen.sh`. Whenever I want to generate some secure passwords (say, for a class full of students with their own databases), I can just type `pwGen 42` (if I have 42 students), and it generates 42 secure passwords, and saves them to a file called `output.txt`.</p>
+			<p>The code in the file looks like this:</p>
+			<pre><code>#!/bin/bash
+OUTPUTFILE="output.txt"
+END=${1:-1}
+touch -a $OUTPUTFILE
+for ((i=1;i<=$END;i++)); do
+    openssl rand -base64 12 >> $OUTPUTFILE
+done
+echo "Passwords saved to $OUTPUTFILE"</code></pre>
+			<p>&hellip; but honestly I haven't looked at it in years.</p>
+			<p>Creating bash scripts usually goes like this:</p>
+			<ol>
+				<li>Have an annoying task you do on your computer.</li>
+				<li>Google the individual steps "&hellip; in bash".</li>
+				<li>Build out your script by doing the individual steps in the command line.</li>
+				<li>Save it in a <code>.sh</code> file.</li>
+				<li>Go into work at a new job and realize you completely forget how you wrote that script, you're not sure where it is, and you definitely should've thrown it into a repo on Github.</li>
+			</ol>
+			<p>Shell scripting isn't typically a language you "learn", because it's all about automating stuff. Once you write it once, you never have to write it again.</p>
+			<p>That being said, there are a bajillion things you can do in the command line, like watch ascii star wars (<code>telnet towel.blinkenlights.nl</code>). I personally love the crazy powerful <code><a href="https://ffmpeg.org/" target="_blank">ffmpeg</a></code> library. Getting familiar with what's <em>possible</em> is what will allow you to look up how to do stuff. Here is an insanely long list of <a href="https://github.com/onceupon/Bash-Oneliner" target="_blank" rel="noopener noreferrer">things you can do in one line of bash code<span class="show-for-sr"> Opens in a new window</span></a>.</p>
+		</section>
+		<section id="editorConfig">
+			<h3>Editor Configuration</h3>
+			<p>Most popular code editors allow you to store all your settings in a <code>.json</code> file. Having your team use the same configurations (at least as a baseline) can save a lot of headaches, especially when it comes to auto-formatting (different formatting can make code diffs a pain). Being able to share this baseline settings file can make life easier for onboarding, working on a new machine, and working remote.</p>
+			<p>Here's the documentation for <a href="https://code.visualstudio.com/docs/getstarted/settings#_settingsjson" target="_blank" rel="noopener noreferrer">VS Code's settings file<span class="show-for-sr"> Opens in a new window</span></a> and how to work with it.</p>
+		</section>
+		<section id="sharedDev">
+			<h3>A shared development environment</h3>
+			<p>Making sure everyone on the team is essentially working on the same "machine" can save a lot of headaches. Making sure folks are using the same version of software is great, especially if it's as close an approximation to the live environment (i.e. the server) as possible.</p>
+			<p>There's a few different ways to accomplish this, including <a href="https://docs.docker.com/desktop/dev-environments/" target="_blank" rel="noopener noreferrer">Docker<span class="show-for-sr"> Opens in a new window</span></a> and <a href="https://developer.hashicorp.com/vagrant/intro" target="_blank" rel="noopener noreferrer">Vagrant<span class="show-for-sr"> Opens in a new window</span></a>.</p>
+		</section>
+		<section id="staticHTML">
+			<h3>Boilerplate for static HTML deployment</h3>
+			<p>You know what's great? Making web pages. I wonder how fast we could make it to&hellip;</p>
+			<ul>
+				<li>Create an HTML file with sensible defaults</li>
+				<li>Write to that HTML file (something like <a href="https://daringfireball.net/projects/markdown/" target="_blank" rel="noopener noreferrer">markdown<span class="show-for-sr"> Opens in a new window</span></a> might help)</li>
+				<li>Deploy that HTML file to the internet (something like <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer">Netlify<span class="show-for-sr"> Opens in a new window</span></a> might help).</li>
+			</ul>
+			<p>Could we use shell scripts to help us? Is there an even easier process that we could document and share with our teammates?</p>
+		</section>
+		<section id="automatedDocs">
+			<h3>Automated documentation</h3>
+			<p>You know what can take a long time? Documentation.</p>
+			<p>Some people, like me, think that taking the time to write good, thorough documentation can help us understand our work better, create better dialogue within the team, and be pleasurable unto itself.</p>
+			<p>I understand this is perverse.</p>
+			<p>But what if I told you it's <strong>possible to generate documentation from the code you're already writing?</strong></p>
+			<p>Okay, you <em>do</em> have to write some code comments, but things like <a href="https://jsdoc.app/about-getting-started.html" target="_blank" rel="noopener noreferrer">JSDoc<span class="show-for-sr"> Opens in a new window</span></a>, <a href="https://www.sphinx-doc.org/en/master/index.html" target="_blank" rel="noopener noreferrer">Sphinx<span class="show-for-sr"> Opens in a new window</span></a> (for Python) and <a href="https://storybook.js.org/addons/@storybook/addon-docs" target="_blank" rel="noopener noreferrer">Storybook Docs<span class="show-for-sr"> Opens in a new window</span></a> are really impressive. Or maybe you want a really swell looking documentation site that lets your React components <a href="https://www.docz.site/" target="_blank" rel="noopener noreferrer">basically document themselves</a>?</p>
+			<p>There's a lot of good options out there for having your documentation write itself!</p>
+		</section>
+		<section id="testSuite">
+			<h3>A boilerplate testing suite</h3>
+			<p>The world of software testing is wild, wooly and rich, from simple unit tests that can tell you if <code>2 + 2</code> does, in fact, equal <code>4</code>, to <a href="https://engineering.dollarshaveclub.com/monitor-all-the-things-4b6f88a922e6" target="_blank" rel="noopener noreferrer">monitoring your site 24/7<span class="show-for-sr"> Opens in a new window</span></a>, to visual regression testing that can tell you if a single pixel is out of line.</p>
+			<figure><a target="_blank" href="https://webintro.ca/images/vis-diff.jpg"><img src="https://webintro.ca/images/vis-diff.jpg" alt=""></a><figcaption>Visual regression, by <a href="https://markus.oberlehner.net/blog/visual-regression-tests-for-vue-applications-with-jest-and-puppeteer/" target="_blank">Markus Oberlehner<span class="show-for-sr"> Opens in a new window</span></a></figcaption></figure>
+			<p>As with so many things in our world, the set-up is the hard part. What if you could get things up and running for your teammates so that they could have an easy-to-replicate demo with simple instructions and guidance? <a href="https://jestjs.io/" target="_blank" rel="noopener noreferrer">Jest<span class="show-for-sr"> Opens in a new window</span></a> and <a href="https://mochajs.org/" target="_blank" rel="noopener noreferrer">Mocha<span class="show-for-sr"> Opens in a new window</span></a> are common, popular unit testing libraries. You could start there, and, if you have time, investigate <a href="https://github.com/features/actions" target="_blank" rel="noopener noreferrer">CI actions<span class="show-for-sr"> Opens in a new window</span></a> (testing/linting as part of a pull request), and more advanced types of testing, like <a href="https://www.cypress.io/" target="_blank" rel="noopener noreferrer">end-to-end testing<span class="show-for-sr"> Opens in a new window</span></a> and <a href="https://pptr.dev/" target="_blank" rel="noopener noreferrer">browser automation<span class="show-for-sr"> Opens in a new window</span></a>.</p>
+		</section>
+		<section id="integration">
+			<h3>Tooling integration</h3>
+			<p>One thing that makes software development tooling popular (or despised) is the ability to automate it and integrate it with other tools. Want to get a Slack message when someone assigns you a JIRA task? Want to move your Trello card automatically from 'Doing' to 'Code Review' when you submit a pull request in Github? These things are just the tip of the iceberg when it comes to integrating dev team tooling. Think about anything that's annoying or repetitive - any digital 'chore'. There's probably a way to automate it!</p>
+		</section>
+		<section id="git">
+			<h2>How we'll work in git</h2>
+			<p><em>Since some of you are new to git, I'm going to try to keep this as simple as possible. If things start to get messy, that's a great thing for us to work out in our sprint retrospective.</em></p>
+			<p>On the first day, run this command in your terminal:</p>
+			<pre><code>git clone git@github.com:HTTP5214-Winter2023/starter.git</code></pre>
+			<p>This will create a copy of the git repo on your computer.</p>
+			<p>To start working on your own version of the repo, use the command <code>git branch whateverYouWantToCallIt</code>. A 'branch' is a separate version of the code that can eventually get 'merged' back into the main code base, but keeps things separate while you (and others) are doing your own thing.</p>
+			<p>In the folder '<code>starter</code>' that was just created, create a folder for your project.</p>
+			<p>Add any files or folders you need to in order to work on your project. These could be code files, documentation, etc.</p>
+			<p>Whenever you add a file or folder, you'll want to run the command <code>git add .</code>. This gets all the new files and folders 'staged', ready to send to the remote repository (the one we all share, on Github).</p>
+			<p>Whenever you do something worth saving, run the command <code>git commit -m 'Message about what you did'</code>.</p>
+			<p>When you want to save your work to the remote repository, if it's your first time on this particular branch, run the command <code>git push -u origin whateverYouWantToCallIt</code>. This creates the branch in the remote repository, and sends your work there. After you've done it once (for this branch), you can just use the command <code>git push</code>.</p>
+			<p><strong>If you're the only one working on this branch</strong>, then you can just push the code. <strong>If other people are also working on this branch</strong>, then before you push, run the command <code>git pull</code> to see if they've made any changes that might conflict with yours. If there are conflicts, resolve them, commit your resolutions, and push your work.</p>
+			<p>When your code is ready to join the main branch of the project, you can go to your remote repo and create a pull request, and get someone to code review it. If the code reviewer wants you to make some changes, they can reject your PR (pull request), or, if they're happy, they can merge your code into the main project.</p>
+			<p>Whenever you want to start on something new, switch back to the main branch, and create a new branch from there. (It's possible to branch from a branch, but I don't think you'll want to do that most of the time, unless you're doing some intense collaboration.)</p>
+			<p>For more information, like how to resolve conflicts and switch branches, I've created <a href="https://securityqa.ca/posts/version-control" target="_blank" rel="noopener noreferrer">a more in-depth git write-up here<span class="show-for-sr"> Opens in a new window</span></a>.</p>
+		</section>
+		<section>
+			<h3>Doing a code review</h3>
+			<p>Okay, so as we just mentioned, you have to get a classmate to code review your work. How do you do that?</p>
+			<p>In the workplace, your team will probably have all kinds of requirements, both technical and social, on how to do this.</p>
+			<p>We're going to keep it simple, though.</p>
+			<p>When someone tags you in their PR, requesting a code review, you are going to look at the files that have changed, and <strong>see if you understand their code</strong>.</p>
+			<p>If you don't understand their code, it's not because you're dumb, it's because they have formatted their code poorly, or haven't written descriptive comments.</p>
+			<p>If you can't understand their code, let them know where you didn't understand stuff, and reject their pull request. This is not a mean thing to do (unless you're mean about it). It's doing the team a favour by making sure any code that makes it into the main branch is easy to work with.</p>
+			<p>If you <em>can</em> understand their code, make sure there aren't any code conflicts or obvious errors, and that it does something worthwhile. Switch to their branch on your machine and try running their code. Does it work? Great! Does it do something useful? Awesome! Do you have any automated testing set up, and if so, has it passed the tests? Amazing! If it doesn't work, or do something obviously useful, or fails testing, you should reject the pull request (and let them know why), otherwise, you can merge it into the main branch!</p>
+			<p>For more on creating and responding to pull requests, including screenshots of which buttons to press in Github, and how to get and give good feedback, <a href="https://securityqa.ca/posts/version-control/#what-is-code-review" target="_blank" rel="noopener noreferrer">check out my PR write-up here<span class="show-for-sr"> Opens in a new window</span></a>.</p>
+		</section>
+		<section>
+			<h2>Course overview review</h2>
+			<p>Okay, here's the plan:</p>
+			<ul>
+				<li>Figure out "pain points" - things about our work, both in this program and in our workplaces, that we can improve using computer scripting.</li>
+				<li>Investigate possible solutions, and pick one to work on.</li>
+				<li>Get into groups of 5-10 people who are doing similar stuff.</li>
+				<li>If one or more classmates are going to help with your solution, break it up into individual parts that you can work on.</li>
+				<li>Put those solutions/parts on virtual sticky notes.</li>
+				<li>Develop those solutions and store them in Github.</li>
+				<li>In class each week, give us a brief update about how it's going.</li>
+				<li>When your solution is pretty much ready, have 5 other people try it out. If you have to give them instructions on how to use it, write down those instructions. If they ask questions while using it, write down those questions. Ask if there's anything you can improve, and write down their feedback.</li>
+				<li>If you've got something valuable, create a pull request and merge it into the main repository.</li>
+				<li>From there, you can work on improving your solution, or move onto a new one.</li>
+				<li>Every couple weeks, we'll get into our groups and have a discussion about how we're working together. If there's any changes/improvements you can agree on, make it happen.</li>
+				<li>Every couple weeks, we'll get into our groups and have a discussion about what we're going to work on for the new few weeks. This is especially important if you're working on stuff together, but is still helpful just as a way of checking in your work and making commitments.</li>
+			</ul>
 		</section>
 	</main>
 	<footer>
 		<hr>
 		<section id="notes">
-		    <h2>Notes</h2>
-		    <ul>
-		        <li>Code review criteria:
-		            <ul>
-		                <li>Do you understand everything in the code, either because it would be obvious to a junior developer, or because it is documented (either in code comments or a README.md file)?</li>
-		                <li>Are there any code conflicts?</li>
-		                <li>Is the code contributing to the project?</li>
-		            </ul>
-		        </li>
-		    </ul>
 		</section>
 	</footer>
 </body>
