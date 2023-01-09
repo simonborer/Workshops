@@ -153,8 +153,7 @@ blockquote,header{background:var(--nc-bg-2)}dt,summary,table caption{font-weight
 		                        <li>Course description</li>
 		                        <li>Agile (Kanban/Scrum) introduction</li>
 		                        <li>Description of <a href="#potentialProjects">potential projects</a></li>
-		                        <li>Description of a simple git workflow</li>
-		                        <li>Description of code review</li>
+		                        <li>Description of a <a href="#git">simple git workflow</a> with <a href="#codeReview"></a></li>
 		                        <li>Break into groups to identify development pain-points</li>
 		                        <li>Research time</li>
 		                    </ul>
@@ -175,7 +174,7 @@ blockquote,header{background:var(--nc-bg-2)}dt,summary,table caption{font-weight
 		                	<ul>
 		                		<li>Jumbo stand-up</li>
 		                		<li>Research time</li>
-		                		<li>Get into teams</li>
+		                		<li>Get into <a href="#agileTeams">teams</a></li>
 		                		<li>Sprint planning</li>
 		                	</ul>
 		                </td>
@@ -250,6 +249,7 @@ blockquote,header{background:var(--nc-bg-2)}dt,summary,table caption{font-weight
 		<section id="passingCriteria">
 		    <h2>Passing criteria</h2>
 		    <p>Each of you will maintain a markdown (<code>.md</code>) file in the shared git repository. Each week you will document 1) what you worked on in the last session; 2) what you will be working on in your upcoming session; 3) any issues blocking your work. 10 such entries are required for a pass.</p>
+		    <p>Each person must lead at least one agile ceremony (i.e. meeting).</p>
 		    <p>Each student must create at minimum one pull request which passes code review, and which contributes to a project that is user-tested with five classmates (not working on the same project). The results of this user testing must be written down and stored in the git repo.</p>
 		</section>
 		<section id="potentialProjects">
@@ -364,7 +364,7 @@ echo "Passwords saved to $OUTPUTFILE"</code></pre>
 			<p>Whenever you want to start on something new, switch back to the main branch, and create a new branch from there. (It's possible to branch from a branch, but I don't think you'll want to do that most of the time, unless you're doing some intense collaboration.)</p>
 			<p>For more information, like how to resolve conflicts and switch branches, I've created <a href="https://securityqa.ca/posts/version-control" target="_blank" rel="noopener noreferrer">a more in-depth git write-up here<span class="show-for-sr"> Opens in a new window</span></a>.</p>
 		</section>
-		<section>
+		<section id="codeReview">
 			<h3>Doing a code review</h3>
 			<p>Okay, so as we just mentioned, you have to get a classmate to code review your work. How do you do that?</p>
 			<p>In the workplace, your team will probably have all kinds of requirements, both technical and social, on how to do this.</p>
@@ -379,19 +379,24 @@ echo "Passwords saved to $OUTPUTFILE"</code></pre>
 			<h2>Course overview review</h2>
 			<p>Okay, here's the plan:</p>
 			<ul>
-				<li>Figure out "pain points" - things about our work, both in this program and in our workplaces, that we can improve using computer scripting.</li>
+				<li>Figure out "pain points" - things about your work (both in this program and in your upcoming workplaces) that we can make less painful using computer scripting.</li>
 				<li>Investigate possible solutions, and pick one to work on.</li>
 				<li>Get into groups of 5-10 people who are doing similar stuff.</li>
-				<li>If one or more classmates are going to help with your solution, break it up into individual parts that you can work on.</li>
-				<li>Put those solutions/parts on virtual sticky notes.</li>
-				<li>Develop those solutions and store them in Github.</li>
+				<li>If one or more classmates are going to help with your solution, break it up into individual parts that you can each work on.</li>
+				<li>Put those solutions/parts on virtual sticky notes and assign them to yourselves.</li>
+				<li>Create those solutions and store the code in Github.</li>
 				<li>In class each week, give us a brief update about how it's going.</li>
 				<li>When your solution is pretty much ready, have 5 other people try it out. If you have to give them instructions on how to use it, write down those instructions. If they ask questions while using it, write down those questions. Ask if there's anything you can improve, and write down their feedback.</li>
-				<li>If you've got something valuable, create a pull request and merge it into the main repository.</li>
+				<li>If you've made something of value, create a pull request and merge it into the main repository.</li>
 				<li>From there, you can work on improving your solution, or move onto a new one.</li>
 				<li>Every couple weeks, we'll get into our groups and have a discussion about how we're working together. If there's any changes/improvements you can agree on, make it happen.</li>
 				<li>Every couple weeks, we'll get into our groups and have a discussion about what we're going to work on for the new few weeks. This is especially important if you're working on stuff together, but is still helpful just as a way of checking in your work and making commitments.</li>
 			</ul>
+		</section>
+		<section id="agileTeams">
+			<h2>Team work in Agile</h2>
+			<p>In agile development, teams are meant to be "cross-functional", meaning that each team member has an expertise, but also basic skills in all the jobs the team does.</p>
+			<p>In the third week, you'll be broken up into individual teams of 5-10 people, and you'll start to run meetings for yourselves. This means one person in your team will need to be the "scrum master" - the person who runs the meeting. Every person on your team </p>
 		</section>
 	</main>
 	<footer>
